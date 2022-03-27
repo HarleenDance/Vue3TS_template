@@ -1,0 +1,83 @@
+//颜色
+$main-color: #4293f4; //主色
+$warn-color: #f0422c; //警告色
+$border-color: #EBEBEB; //边框颜色
+$gray-0: #000000; //标题：#000000
+$gray-6: #666666; //按钮/确认信息 #666666
+$gray-9: #999999; //不可编辑/提示文案 #999999
+$gray-c: #999999; //表单提示 #cccccc
+$bg-color: #ffffff; //容背景色：#ffffff
+$gradual-color: #f3f4f8; //首页背景渐变色颜色1：#FFFFFF 颜色2：#F3F4F8
+$gray-1:#171819;  //导航栏颜色
+
+//字体
+$ft-48: 48px; //48号/行高66 页面标题
+$ft-36: 36px; //36号/行高48 申报主要内容
+$ft-32: 32px; //32号/行高44 只读表单
+$ft-30: 30px; //30号/行高40 辅助内容
+$ft-26: 26px; //26号/行高36 注释
+//行高
+$lh-66: 66px; //48号/行高66 页面标题
+$lh-55: 55px; //
+$lh-48: 48px; //36号/行高48 申报主要内容
+$lh-44: 44px; //32号/行高44 只读表单
+$lh-40: 40px; //30号/行高40 辅助内容
+$lh-36: 36px; //26号/行高36 注释
+
+
+// // 背景图片地址和大小
+@mixin bis($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+// //1px底部边框
+@mixin border-1px($color) {
+  position: relative;
+  &:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid $color;
+    content: "";
+  }
+}
+
+// //宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// //字体大小，颜色
+@mixin sc($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+//表单按钮
+.form-button {
+  height: 100px;
+  background: $main-color;
+  border-radius: 14px;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  @include sc($ft-32, $bg-color);
+}
+//左右间距
+.padding-lr-30{
+  padding-left: $ft-30;
+  padding-right: $ft-30;
+}

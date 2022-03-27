@@ -1,0 +1,82 @@
+:deep.ty-popup {
+  .van-popup {
+    background: $bg-color;
+  }
+  .showColumnCss {
+    margin-left: $ft-30;
+    margin-right: $ft-30;
+    .row-item{
+        padding-top: 50px;
+        padding-bottom: 20px; 
+    }
+    .item-title{
+        height: 113px;
+        background: $bg-color;
+        box-shadow: inset 0px -1px 0px 0px $border-color;
+        font-weight: 500;
+        @include sc($ft-36, #171819);
+        justify-content: left;
+        align-items: center;
+    }
+    .column-item{
+        height: 98px;
+        background: #FAFAFA;
+        border-radius: 8px;
+        opacity: 0.8;
+        border: 1px solid $border-color;
+        align-items: center;
+        margin-bottom: $ft-30;
+    } 
+    .van-haptics-feedback {
+      display: none;
+    }
+    .van-picker {
+      background: $bg-color;
+    }
+
+    .van-picker__title {
+      font-weight: 500;
+      @include sc($ft-36, #171819);
+    }
+    .van-picker__toolbar {
+      height: 113px;
+      background: $bg-color;
+      box-shadow: inset 0px -1px 0px 0px $border-color;
+    }
+    .van-picker-column__item {
+      @include sc($ft-32, $gray-6);
+    }
+    [class*='van-hairline']::after {
+      border-top: 2px solid $main-color;
+      border-bottom: 2px solid $main-color;
+    }
+    .van-picker-column__item--selected {
+      .van-ellipsis {
+        color: $main-color;
+      }
+    }
+    .van-picker__mask {
+      background-image: none;
+    }
+
+    .btnColumn {
+      height: 100px;
+      background: $main-color;
+      border-radius: 14px;
+      align-items: center;
+      margin-top: 69px;
+      margin-bottom: 80px;
+      @include sc($ft-32, $bg-color);
+    }
+
+    .btnPickColumn {
+        height: 100px;
+        background: $main-color;
+        border-radius: 14px;
+        align-items: center; 
+        margin-top: -80px;
+        @include sc($ft-32, $bg-color);
+      }
+
+  }
+}

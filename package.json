@@ -1,0 +1,62 @@
+{
+  "name": "vue3x_vant_mobile",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "test": "vue-cli-service build --mode testing",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vant/area-data": "^1.2.1",
+    "@vue/cli-plugin-typescript": "^4.5.15",
+    "axios": "^0.24.0",
+    "compressorjs": "^1.1.1",
+    "core-js": "^3.6.5",
+    "dayjs": "^1.6.9",
+    "lodash": "^4.17.15",
+    "ts-import-plugin": "^2.0.0",
+    "typescript": "^4.5.4",
+    "vant": "^3.3.7",
+    "vue": "^3.2.10",
+    "vue-router": "^4.0.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "less": "^3.12.2",
+    "less-loader": "^7.1.0",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "postcss-px-to-viewport": "^1.1.1",
+    "compression-webpack-plugin": "^3.1.0",
+    "webpack-cdn-plugin": "^3.3.1",
+    "svg-sprite-loader": "^4.2.1"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
